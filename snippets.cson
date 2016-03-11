@@ -36,39 +36,35 @@
   'React Component: POC':
     'prefix': 'rcom'
     'body': """
-    const React = require(\'react\');
-    const { Component, PropTypes } = React;
+    import React, { PropTypes } from \'react\'
 
-    class $1 extends Component {
-      static displayName = '$1';
-
+    export default class $1 extends React.Component {
       static propTypes = {
         $2
       };
 
-      render() {
-        return null;
+      render () {
+        return null
       }
     }
-
-    module.exports = $1;
     """
   'React Component Spec: POC':
     'prefix': 'rcoms'
     'body': """
-    const React = require(\'react\');
+    import React from \'react\'
 
-    const $1 = require(\'app/components/$2\');
+    import $1 from \'src/components/$1\'
 
     describe(\'$1\', () => {
-      function render(props = {}) {
-        return shallowRender(<$1 {...props} />);
-      }
-
       it('renders', () => {
-        expect(render()).to.not.be.undefined;
-      });
-    });
+        const component = render()
+        expect(component).to.not.be.null
+      })
+
+      function render (props = {}) {
+        return shallowRender(<$1 {...props} />)
+      }
+    })
     """
 
 #
