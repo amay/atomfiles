@@ -53,7 +53,7 @@
     'body': """
     import React, { PropTypes } from \'react\'
 
-    export default function $1 props {
+    export default function $1 (props) {
       return null
     }
 
