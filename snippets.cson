@@ -20,20 +20,20 @@
 '.source.js':
   'Mocha Describe':
     'prefix': 'des'
-    'body': 'describe(\'$1\', () => {\n  $2\n});'
+    'body': 'describe(\'$1\', () => {\n  $2\n})'
   'Mocha Context':
     'prefix': 'con'
-    'body': 'context(\'$1\', () => {\n  $2\n});'
+    'body': 'context(\'$1\', () => {\n  $2\n})'
   'Mocha It':
     'prefix': 'it'
-    'body': 'it(\'$1\', () => {\n  $2\n});'
+    'body': 'it(\'$1\', () => {\n  $2\n})'
   'Mocha beforeEach':
     'prefix': 'bef'
-    'body': 'beforeEach((${1:done}) => {\n  $2\n});'
+    'body': 'beforeEach((${1:done}) => {\n  $2\n})'
   'Mocha afterEach':
     'prefix': 'aft'
-    'body': 'afterEach((${1:done}) => {\n  $2\n});'
-  'React Component: POC':
+    'body': 'afterEach((${1:done}) => {\n  $2\n})'
+  'React Component':
     'prefix': 'rcom'
     'body': """
     import React, { PropTypes } from \'react\'
@@ -48,7 +48,20 @@
       }
     }
     """
-  'React Component Spec: POC':
+  'React Functional Component':
+    'prefix': 'rfcom'
+    'body': """
+    import React, { PropTypes } from \'react\'
+
+    export default function $1 props {
+      return null
+    }
+
+    $1.propTypes = {
+      $2
+    }
+    """
+  'React Component Spec':
     'prefix': 'rcoms'
     'body': """
     import React from \'react\'
@@ -62,7 +75,7 @@
       })
 
       function render (props = {}) {
-        return shallowRender(<$1 {...props} />)
+        return shallow(<$1 {...props} />)
       }
     })
     """
