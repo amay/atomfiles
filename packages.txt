@@ -10,11 +10,13 @@ file-icons@1.7.11
 find-and-till@1.0.2
 foldername-tabs@0.1.11
 git-plus@5.13.4
+language-babel@2.42.0
 language-haml@0.24.0
 language-jade@0.7.1
 lazy-motion@0.3.0
 linter@1.11.4
 linter-eslint@7.2.2
+linter-proselint@2.0.0
 painless-panes@0.1.0
 pane-split-moves-tab@0.1.0
 pigments@0.26.3
