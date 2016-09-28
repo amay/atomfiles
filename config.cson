@@ -5,7 +5,14 @@
   "autocomplete-plus":
     useAlternateScoring: true
   "clip-history": {}
-  core: {}
+  core:
+    disabledPackages: [
+      "language-babel"
+    ]
+    themes: [
+      "one-dark-ui"
+      "atom-dark-syntax"
+    ]
   editor:
     fontFamily: " Inconsolata-g, Menlo, Consolas, 'DejaVu Sans Mono', monospace"
     fontSize: 16
