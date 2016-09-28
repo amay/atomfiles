@@ -24,5 +24,3 @@ recent-files-fuzzy-finder@0.2.4
 set-syntax@0.3.0
 tabularize@0.2.5
 toggle-quotes@1.0.0
-
-
