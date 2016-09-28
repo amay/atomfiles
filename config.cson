@@ -6,6 +6,7 @@
     useAlternateScoring: true
   "clip-history": {}
   core:
+    allowPendingPaneItems: false
     ignoredNames: [
       ".git"
       "node_modules"
