@@ -1,40 +1,39 @@
 "*":
+  "autocomplete-elixir":
+    elixirPath: "/usr/local/bin/elixir"
+    erlangHome: "/usr/local/Cellar/erlang/18.1/bin"
+  "autocomplete-plus":
+    useAlternateScoring: true
+  "clip-history": {}
+  core: {}
+  editor:
+    fontFamily: " Inconsolata-g, Menlo, Consolas, 'DejaVu Sans Mono', monospace"
+    invisibles: {}
   "exception-reporting":
     userId: "53c5f869-8a29-d7f5-ef48-bc598612bb8d"
-  welcome:
-    showOnStartup: false
-  editor:
-    invisibles: {}
-    fontFamily: " Inconsolata-g, Menlo, Consolas, 'DejaVu Sans Mono', monospace"
-  tabs:
-    usePreviewTabs: false
-  core: {}
-  "linter-eslint":
-    disableWhenNoEslintrcFileInPath: true
-    lintOnEdit: false
-  react: {}
-  "language-babel":
-    babelStage: 1
-    disableWhenNoBabelrcFileInPath: true
-    suppressTranspileOnSaveMessages: true
-    transpileOnSave: false
-  "clip-history": {}
   "file-icons":
     tabPaneIcon: false
   "find-and-replace":
     openProjectFindResultsInRightPane: true
-  "painless-panes": {}
   "fuzzy-finder":
     searchAllPanes: true
     useAlternateScoring: true
-  "autocomplete-plus":
-    useAlternateScoring: true
-  "autocomplete-elixir":
-    elixirPath: "/usr/local/bin/elixir"
-    erlangHome: "/usr/local/Cellar/erlang/18.1/bin"
+  "language-babel":
+    disableWhenNoBabelrcFileInPath: true
+    suppressTranspileOnSaveMessages: true
+    transpileOnSave: false
   "linter-elixirc":
     elixircPath: "/usr/local/bin/elixirc"
     mixPath: "/usr/local/bin/mix"
+  "linter-eslint":
+    disableWhenNoEslintrcFileInPath: true
+    lintOnEdit: false
+  "painless-panes": {}
+  react: {}
+  tabs:
+    usePreviewTabs: false
+  welcome:
+    showOnStartup: false
 ".cs.source":
   editor:
     tabLength: 4
