@@ -41,6 +41,7 @@
   'alt-j': 'window:focus-pane-below'
   'ctrl--': 'tree-view:toggle'
   'cmd-alt-n': 'advanced-open-file:toggle'
+  'cmd-alt-l': 'nvatom:toggle'
 
 '.fuzzy-finder atom-text-editor[mini]':
   'ctrl-v': 'pane:split-right'
