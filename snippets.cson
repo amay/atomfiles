@@ -36,48 +36,53 @@
   'React Component':
     'prefix': 'rcom'
     'body': """
-    import React, { PropTypes } from \'react\'
+    import React from \'react\'
+    import PropTypes from \'prop-type\'
 
-    export default class $1 extends React.Component {
-      static propTypes = {
-        $2
-      };
-
+    class $1 extends React.Component {
       render () {
         return null
       }
-    }
-    """
-  'React Functional Component':
-    'prefix': 'rfcom'
-    'body': """
-    import React, { PropTypes } from \'react\'
-
-    export default function $1 (props) {
-      return null
     }
 
     $1.propTypes = {
       $2
     }
+
+    export default $1
+    """
+  'React Functional Component':
+    'prefix': 'rfcom'
+    'body': """
+    import React from \'react\'
+    import PropTypes from \'prop-types\'
+
+    const $1 = () => (
+      <div>$1</div>
+    )
+
+    $1.propTypes = {
+      $2
+    }
+
+    export default $1
     """
   'React Component Spec':
     'prefix': 'rcoms'
     'body': """
     import React from \'react\'
+    import { shallow } from \'enzyme\'
 
-    import $1 from \'src/components/$1\'
+    import $1 from \'./$1\'
 
-    describe(\'$1\', () => {
-      it('renders', () => {
-        const component = render()
-        expect(component).to.not.be.null
-      })
-
-      function render (props = {}) {
-        return shallow(<$1 {...props} />)
-      }
+    it('renders', () => {
+      const component = render()
+      expect(component).not.toEqual(null)
     })
+
+    function render (props = {}) {
+      return shallow(<$1 {...props} />)
+    }
     """
 
 #
